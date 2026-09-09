@@ -1,0 +1,32 @@
+ 注释：1.单行：//内容
+          2.多行：/*内容*/
+ 变量： 数据类型 变量名 = 变量初始值;
+                        如:int a = 10；
+ 输出： cout <<"a=" << a << endl;
+ 常量：define和const均是常量，修改就会报错。
+ 标识符：1.不能是关键词
+              2.由字母，数字，下划线组成
+              3.开头不能是数字
+              4.区分大小写
+ 实型：默认显示6位有效数字。语法同上文变量。
+           float 4字节 7位有效数字             float f1=3.14f(带f说明为float，否则默认为double。)
+           double 8字节 15-16位有效数字  double d1=3.14
+ 字符型变量： char ch = 'a'(只能单个字符)
+                  对应ASCII编码：cout <<(int) ch<<endl;
+ 转义字符：\n 改行
+                \\ 输出\
+                \t 平行排列数据 （/t占8个位置）
+ 字符串变量：char ch[ ]="abcdef"
+                 或：string st="abcdef"(使用这个c++风格是=时要加头文件：#include<string>)
+ #include <windows.h> // 1. 引入 Windows 头文件
+ SetConsoleOutputCP(65001);
+ 选择结构：1.if语句 语法：if（表达式）{      
+                                                             else if（表达式）{
+                                                                                                    }
+                                                                        else{                         }             }
+                 2.switch语句 语法：switch（变量）{case “某个整型或字符” ：
+                                                                                                                        }
+                 3.三目运算符 语法：表达式？变量1：变量2     成立则输出变量1，反之则输出变量2
+ 生产随机数：#include<ctime>  (time系统头文件)
+                    srand((unsigned int)time(NULL));
+                    int num=rand() % 100+1;//rand() % 100+1为随机生产0-99，+1变为1-100

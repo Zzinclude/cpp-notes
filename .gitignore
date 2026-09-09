@@ -1,0 +1,24 @@
+# 编译产物
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.out
+
+# 构建目录
+Debug/
+Release/
+build/
+cmake-build-*/
+.vs/
+
+# VS 用户配置
+*.user
+*.suo
+*.aps
+
+# 系统垃圾
+Thumbs.db
+desktop.ini

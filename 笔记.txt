@@ -26,7 +26,12 @@
                                                                         else{                         }             }
                  2.switch语句 语法：switch（变量）{case “某个整型或字符” ：
                                                                                                                         }
+                    注意：不break会穿透执行所有case代码，包括default。
                  3.三目运算符 语法：表达式？变量1：变量2     成立则输出变量1，反之则输出变量2
  生产随机数：#include<ctime>  (time系统头文件)
                     srand((unsigned int)time(NULL));
-                    int num=rand() % 100+1;//rand() % 100+1为随机生产0-99，+1变为1-100
+                    int num=rand() % 100+1;//rand() % 100为随机生产0-99，+1变为1-100
+释放指针：delete p       释放数组：delete[] arr
+引用：（起别名）数据类型 &别名=原名
+new：new返回的是该数据类型的指针
+2026/9/9 今天学会了git

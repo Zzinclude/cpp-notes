@@ -78,3 +78,11 @@ new：new返回的是该数据类型的指针
 		  3.所有对象共享一份数据
 访问静态成员：1.通过对象	p.a;
 			 2.通过类名	person::a;（私有权限访问不到）
+继承：子类继承父类所有成员，public继承保持权限不变，
+						   protected继承将public和protected都继承为protected
+						   private继承将public和protected继承为private
+						 （但上述所有情况，父类中private在在子类中不可访问）
+            继承查看工具：打开开发人员命令提示符工具，
+					先定位cpp文件所在盘符
+					再输入文件所在路径，输入cl /d1 reportSingleClassLayout类名 文件名
+		同名函数：子类会隐藏父类中同名函数，需要用：：才能引用
